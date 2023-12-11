@@ -1,0 +1,12 @@
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\bin\Debug\net5.0\BusinessAdvanceManagement.DataAccess.deps.json
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\bin\Debug\net5.0\BusinessAdvanceManagement.DataAccess.dll
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\bin\Debug\net5.0\ref\BusinessAdvanceManagement.DataAccess.dll
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\bin\Debug\net5.0\BusinessAdvanceManagement.DataAccess.pdb
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\obj\Debug\net5.0\BusinessAdvanceManagement.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\obj\Debug\net5.0\BusinessAdvanceManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\obj\Debug\net5.0\BusinessAdvanceManagement.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\obj\Debug\net5.0\BusinessAdvanceManagement.DataAccess.AssemblyInfo.cs
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\obj\Debug\net5.0\BusinessAdvanceManagement.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\obj\Debug\net5.0\BusinessAdvanceManagement.DataAccess.dll
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\obj\Debug\net5.0\ref\BusinessAdvanceManagement.DataAccess.dll
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.DataAccess\obj\Debug\net5.0\BusinessAdvanceManagement.DataAccess.pdb
