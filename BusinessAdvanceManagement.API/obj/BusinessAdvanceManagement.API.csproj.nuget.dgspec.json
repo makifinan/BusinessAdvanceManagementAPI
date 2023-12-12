@@ -27,7 +27,20 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.BusinessLogic\\BusinessAdvanceManagement.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.BusinessLogic\\BusinessAdvanceManagement.BusinessLogic.csproj"
+              },
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj"
+              },
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.DataAccess\\BusinessAdvanceManagement.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.DataAccess\\BusinessAdvanceManagement.DataAccess.csproj"
+              },
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -59,6 +72,267 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.BusinessLogic\\BusinessAdvanceManagement.BusinessLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.BusinessLogic\\BusinessAdvanceManagement.BusinessLogic.csproj",
+        "projectName": "BusinessAdvanceManagement.BusinessLogic",
+        "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.BusinessLogic\\BusinessAdvanceManagement.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\Akif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.BusinessLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Akif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj"
+              },
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.DataAccess\\BusinessAdvanceManagement.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.DataAccess\\BusinessAdvanceManagement.DataAccess.csproj"
+              },
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj",
+        "projectName": "BusinessAdvanceManagement.Core",
+        "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj",
+        "packagesPath": "C:\\Users\\Akif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Akif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.24, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.DataAccess\\BusinessAdvanceManagement.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.DataAccess\\BusinessAdvanceManagement.DataAccess.csproj",
+        "projectName": "BusinessAdvanceManagement.DataAccess",
+        "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.DataAccess\\BusinessAdvanceManagement.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Akif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Akif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Core\\BusinessAdvanceManagement.Core.csproj"
+              },
+              "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.24, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj",
+        "projectName": "BusinessAdvanceManagement.Domain",
+        "projectPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\BusinessAdvanceManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Akif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akif\\Desktop\\BusinessAdvanceManagement\\BusinessAdvanceManagement\\BusinessAdvanceManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Akif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

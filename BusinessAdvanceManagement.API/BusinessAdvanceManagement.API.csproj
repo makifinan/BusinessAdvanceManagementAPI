@@ -8,4 +8,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessAdvanceManagement.BusinessLogic\BusinessAdvanceManagement.BusinessLogic.csproj" />
+    <ProjectReference Include="..\BusinessAdvanceManagement.Core\BusinessAdvanceManagement.Core.csproj" />
+    <ProjectReference Include="..\BusinessAdvanceManagement.DataAccess\BusinessAdvanceManagement.DataAccess.csproj" />
+    <ProjectReference Include="..\BusinessAdvanceManagement.Domain\BusinessAdvanceManagement.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

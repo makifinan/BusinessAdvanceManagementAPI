@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Concrete\" />
     <Folder Include="BusinessRules\" />
     <Folder Include="Validation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessAdvanceManagement.Core\BusinessAdvanceManagement.Core.csproj" />
+    <ProjectReference Include="..\BusinessAdvanceManagement.DataAccess\BusinessAdvanceManagement.DataAccess.csproj" />
+    <ProjectReference Include="..\BusinessAdvanceManagement.Domain\BusinessAdvanceManagement.Domain.csproj" />
   </ItemGroup>
 
 </Project>
