@@ -6,12 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessAdvanceManagement.DataAccess.Interface
+namespace BusinessAdvanceManagement.BusinessLogic.Interface
 {
-    public interface IWorkerDAL
+    public interface IWorkerService
     {
         GeneralReturnType<IEnumerable<WorkerListDTO>> GetAll();
         GeneralReturnType<WorkerAddDTO> Add(WorkerAddUserDTO workerAddUserDTO);
-        
     }
 }

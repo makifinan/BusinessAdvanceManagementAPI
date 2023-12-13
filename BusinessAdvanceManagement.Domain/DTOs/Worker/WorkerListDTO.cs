@@ -8,19 +8,21 @@ namespace BusinessAdvanceManagement.Domain.DTOs.Worker
 {
     public record WorkerListDTO
     {
-        public int WorkerID { get; set; }
+        public int WorkerID { get; init; }
 
-        public int WorkerRolID { get; set; }
-        public string RoleName { get; set; }
+        public int WorkerRolID { get; init; }
+        public string RoleName { get; init; }
 
-        public int WorkerManagerID { get; set; }
-        public int WorkerBirimID { get; set; }
-        public string UnitName { get; set; }
+        public int WorkerManagerID { get; init; }
+        public virtual string ManagerWorkerName { get; init; }
+        public virtual string ManagerWorkerSurname { get; init; }
+        public int WorkerBirimID { get; init; }
+        public string UnitName { get; init; }
 
-        public string WorkerName { get; set; }
-        public string WorkerSurname { get; set; }
-        public string WorkerEmail { get; set; }
-        public string WorkerPasswordHash { get; set; }
-        public string WorkerPasswordSalt { get; set; }
+        public string WorkerName { get; init; }
+        public string WorkerSurname { get; init; }
+        public string WorkerEmail { get; init; }
+        public string WorkerPasswordHash { get; init; }
+        public string WorkerPasswordSalt { get; init; }
     }
 }

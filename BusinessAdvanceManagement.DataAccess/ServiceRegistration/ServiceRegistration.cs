@@ -20,6 +20,7 @@ namespace BusinessAdvanceManagement.DataAccess.ServiceRegistration
             services.AddScoped<CRUDHelper>();
             services.AddScoped<IUnitDAL,UnitDAL>();
             services.AddScoped<IRoleDAL,RoleDAL>();
+            services.AddScoped<IWorkerDAL,WorkerDAL>();
             
 
 
