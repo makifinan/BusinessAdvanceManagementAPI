@@ -21,6 +21,7 @@ namespace BusinessAdvanceManagement.DataAccess.ServiceRegistration
             services.AddScoped<IUnitDAL,UnitDAL>();
             services.AddScoped<IRoleDAL,RoleDAL>();
             services.AddScoped<IWorkerDAL,WorkerDAL>();
+            services.AddScoped<IPageRolDAL,PageRoleDAL>();
             
 
 
