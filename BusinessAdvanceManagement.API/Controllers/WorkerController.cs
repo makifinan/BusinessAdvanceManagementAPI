@@ -42,5 +42,16 @@ namespace BusinessAdvanceManagement.API.Controllers
             return BadRequest(result);
         }
 
+        [HttpPost("~/api/login")]
+        public IActionResult Login(WorkerLoginDTO workerLoginDTO)
+        {
+            var result = _workerService.Login(workerLoginDTO);
+            if (result!=null)
+            {
+                return Ok(result);
+            }
+            return null;
+        }
+
     }
 }

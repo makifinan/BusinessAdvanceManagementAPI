@@ -22,7 +22,7 @@ namespace BusinessAdvanceManagement.Domain.DTOs.Worker
         public string WorkerName { get; init; }
         public string WorkerSurname { get; init; }
         public string WorkerEmail { get; init; }
-        public string WorkerPasswordHash { get; init; }
-        public string WorkerPasswordSalt { get; init; }
+        public byte[] WorkerPasswordHash { get; init; }
+        public byte[] WorkerPasswordSalt { get; init; }
     }
 }

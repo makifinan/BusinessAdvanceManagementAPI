@@ -29,5 +29,9 @@ namespace BusinessAdvanceManagement.BusinessLogic.Concrete
             return _workerDAL.Add(workerAddUserDTO); ;
         }
 
+        public WorkerListDTO Login(WorkerLoginDTO workerLoginDTO)
+        {
+            return _workerDAL.Login(workerLoginDTO);
+        }
     }
 }

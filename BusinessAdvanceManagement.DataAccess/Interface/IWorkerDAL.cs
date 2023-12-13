@@ -12,6 +12,7 @@ namespace BusinessAdvanceManagement.DataAccess.Interface
     {
         GeneralReturnType<IEnumerable<WorkerListDTO>> GetAll();
         GeneralReturnType<WorkerAddDTO> Add(WorkerAddUserDTO workerAddUserDTO);
+        WorkerListDTO Login(WorkerLoginDTO workerLoginDTO);
         
     }
 }
