@@ -27,6 +27,9 @@ namespace BusinessAdvanceManagement.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddSession();  
+            //services.AddHttpContextAccessor(); 
+
             services.AddServices(Configuration);
             services.AddBusinessServices(Configuration);
             services.AddControllers();
@@ -45,7 +48,7 @@ namespace BusinessAdvanceManagement.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BusinessAdvanceManagement.API v1"));
             }
-
+            //app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

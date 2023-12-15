@@ -21,7 +21,7 @@ namespace BusinessAdvanceManagement.DataAccess.Concrete
 
         public GeneralReturnType<IEnumerable<PageRoleListDTO>> GetByRolID(int id)
         {
-            var query = "select P.PageID,P.PageName from PageRole PR join Page P ON PR.PageID = P.PageID where PR.RoleID=@roleID";
+            var query = "select P.PageID,P.PageName,P.PageController,P.PageAction from PageRole PR join Page P ON PR.PageID = P.PageID where PR.RoleID=@roleID";
             var parametre = new { roleID=id};
             return _crudHelper.ExecuteQuery<PageRoleListDTO>(query,parametre);
         }

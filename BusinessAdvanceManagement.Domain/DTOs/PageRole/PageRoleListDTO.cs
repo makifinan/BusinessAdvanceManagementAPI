@@ -10,5 +10,9 @@ namespace BusinessAdvanceManagement.Domain.DTOs.PageRole
     {
         public int PageID { get; set; }
         public string PageName { get; set; }
+
+        public string PageController { get; set; }
+        public string PageAction { get; set; }
+
     }
 }

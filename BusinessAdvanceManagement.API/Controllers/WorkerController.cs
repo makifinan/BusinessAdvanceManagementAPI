@@ -48,6 +48,12 @@ namespace BusinessAdvanceManagement.API.Controllers
             var result = _workerService.Login(workerLoginDTO);
             if (result!=null)
             {
+                //HttpContext.Session.SetString("API_ID", result.WorkerID.ToString());
+                //HttpContext.Session.SetString("API_WorkerName", result.WorkerName.ToString());
+                //HttpContext.Session.SetString("API_WorkerSurname", result.WorkerSurname.ToString());
+                //HttpContext.Session.SetString("API_WorkerRolID", result.WorkerRolID.ToString());
+                //HttpContext.Session.SetString("API_WorkerRoleName", result.RoleName.ToString());
+                //HttpContext.Session.SetString("API_WorkerManagerID", result.WorkerManagerID.ToString());
                 return Ok(result);
             }
             return null;

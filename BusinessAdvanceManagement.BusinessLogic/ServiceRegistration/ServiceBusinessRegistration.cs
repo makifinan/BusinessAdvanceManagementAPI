@@ -19,6 +19,8 @@ namespace BusinessAdvanceManagement.BusinessLogic.ServiceRegistration
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IWorkerService, WorkerService>();
             services.AddScoped<IPageRoleService, PageRoleService>();
+            services.AddScoped<IAdvanceRequestService, AdvanceRequestService>();
+            services.AddScoped<IProjectService, ProjectService>();
 
 
             return services;
