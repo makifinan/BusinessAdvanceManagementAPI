@@ -36,11 +36,16 @@ namespace BusinessAdvanceManagement.API.Controllers
         public IActionResult GetByWorker(int workerID)
         {
             var result = _advanceRequestService.GetByWorker(workerID);
+            //result null kontrolü yap
             if (result.Datas.Any())
             {
-                Ok(result);
+                return Ok(result);
             }
-            return null;
+            else
+            {
+                return Ok();
+            }
+            
         }
     }
 }
