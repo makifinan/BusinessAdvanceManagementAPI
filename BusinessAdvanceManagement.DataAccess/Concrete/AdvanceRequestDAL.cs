@@ -27,5 +27,16 @@ namespace BusinessAdvanceManagement.DataAccess.Concrete
 
             return _crudHelper.ExecuteStoreProcedure<AdvanceRequestAddDTO>("SP_AdvanceRequestAdd", parametre, advanceRequestAddDTO);
         }
+
+        public GeneralReturnType<IEnumerable<AdvanceRequestListDTO>> GetByWorker(int workerID)
+        {
+            var query = "select * from AdvanceRequest AR left join Statu S on AR.AdvanceRequestStatus = S.StatuID left join Worker W on AR.ApprovingDisapproving = W.WorkerID left join Role R on AR.ApprovingDisapprovingRole = R.RoleID left join RefundStatus RS on AR.RefundStatus = RS.RefoundStatusID left join Project P on AR.ProjectID = P.ProjectID where Ar.WorkerID =@workerID";
+
+            var parametre = new { workerID=workerID};
+
+            return _crudHelper.ExecuteQuery<AdvanceRequestListDTO>(query,parametre);
+        }
+
+        
     }
 }

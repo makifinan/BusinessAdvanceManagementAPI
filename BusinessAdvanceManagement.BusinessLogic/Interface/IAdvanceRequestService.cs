@@ -11,5 +11,6 @@ namespace BusinessAdvanceManagement.BusinessLogic.Interface
     public interface IAdvanceRequestService
     {
         GeneralReturnType<AdvanceRequestAddDTO> Add(AdvanceRequestAddDTO advanceRequestAddDTO);
+        GeneralReturnType<IEnumerable<AdvanceRequestListDTO>> GetByWorker(int workerID);
     }
 }

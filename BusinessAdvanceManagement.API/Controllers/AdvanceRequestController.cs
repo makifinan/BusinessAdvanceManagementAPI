@@ -31,5 +31,16 @@ namespace BusinessAdvanceManagement.API.Controllers
             }
             return Ok(result);
         }
+
+        [HttpGet("~/api/getbyworkeradvancerequest/{workerID}")]
+        public IActionResult GetByWorker(int workerID)
+        {
+            var result = _advanceRequestService.GetByWorker(workerID);
+            if (result.Datas.Any())
+            {
+                Ok(result);
+            }
+            return null;
+        }
     }
 }
