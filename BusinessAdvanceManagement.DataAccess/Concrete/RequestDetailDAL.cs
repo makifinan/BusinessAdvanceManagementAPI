@@ -26,9 +26,21 @@ namespace BusinessAdvanceManagement.DataAccess.Concrete
             return _crudHelper.ExecuteQuery<ConfirmAdvanceListDTO>(query,parametre);
         }
 
-        public GeneralReturnType<IEnumerable<ConfirmAdvanceListDTO>> GetAdvanceRequestDetail(int advanceRequestID)
+        public GeneralReturnType<IEnumerable<ConfirmAdvanceListDTO>> GetAdvanceRequestAll(int statuID)
         {
-            throw new NotImplementedException();
+            var query = "select AR.AdvanceRequestID,ARD.AdvanceRequestDetailID, WO.WorkerName,WO.WorkerSurname,RO.RoleName,U.UnitName,S.StatuName,AR.Amount,AR.CreatedDate,AR.DesiredDate,P.ProjectName,W.WorkerName AS EndConfirmWorkerName,W.WorkerSurname AS EndConfirmWorkerSurname,R.RoleName AS EndConfirmRoleName,ARD.CreatedDate AS EndConfirmDate,ARD.ConfirmedAmount AS EndConfirmAmount from AdvanceRequestDetail ARD join Worker W ON ARD.TransactionOwner = W.WorkerID Join Role R on w.WorkerRolID = R.RoleID join AdvanceRequest AR on ARD.AdvenceRequestID = AR.AdvanceRequestID join Worker WO ON AR.WorkerID = WO.WorkerID join Role RO ON WO.WorkerRolID = RO.RoleID join Unit U ON WO.WorkerBirimID = U.UnitID join Statu S on AR.AdvanceRequestStatus = S.StatuID join Project P ON AR.ProjectID = P.ProjectID WHERE AR.AdvanceRequestStatus = @advanceRequestStatus ORDER BY ARD.CreatedDate DESC";
+
+            var parametre = new { advanceRequestStatus = statuID };
+            return _crudHelper.ExecuteQuery<ConfirmAdvanceListDTO>(query,parametre);
+        }
+
+        public GeneralReturnType<IEnumerable<ConfirmAdvanceDetailDTO>> GetAdvanceRequestDetail(int advanceRequestID)
+        {
+            var query = "select top 1 ARD.AdvanceRequestDetailID,W.WorkerName AS EndConfirmWorkerName,W.WorkerSurname as EndConfirmWorkerSurname,R.RoleName as EndConfirmRoleName,ARD.CreatedDate as EndConfirmDate,ARD.ConfirmedAmount as EndConfirmAmount from AdvanceRequestDetail ARD join Worker W on ARD.TransactionOwner = W.WorkerID join Role R on W.WorkerRolID = R.RoleID WHERE ARD.AdvenceRequestID = @advenceRequestID ORDER BY ARD.CreatedDate DESC";
+
+            var parametre = new { advenceRequestID=advanceRequestID};
+
+            return  _crudHelper.ExecuteQuery<ConfirmAdvanceDetailDTO>(query,parametre);
         }
     }
 }

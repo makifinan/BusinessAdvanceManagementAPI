@@ -6,11 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessAdvanceManagement.DataAccess.Interface
+namespace BusinessAdvanceManagement.BusinessLogic.Interface
 {
-    public interface IRequestDetailDAL
+    public interface IRequestDetailService
     {
-
         GeneralReturnType<IEnumerable<ConfirmAdvanceListDTO>> GetAdvanceRequest(int statuID);
         GeneralReturnType<IEnumerable<ConfirmAdvanceListDTO>> GetAdvanceRequestAll(int statuID);
         GeneralReturnType<IEnumerable<ConfirmAdvanceDetailDTO>> GetAdvanceRequestDetail(int advanceRequestID);

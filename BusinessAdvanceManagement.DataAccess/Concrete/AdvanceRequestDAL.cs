@@ -23,7 +23,7 @@ namespace BusinessAdvanceManagement.DataAccess.Concrete
         public GeneralReturnType<AdvanceRequestAddDTO> Add(AdvanceRequestAddDTO advanceRequestAddDTO)
         {
             //httpcontext.session gelmedi bak buraya
-            var parametre = new { AdvanceRequestStatus = 1,Amount=advanceRequestAddDTO.Amount,CreatedDate=DateTime.Now,DesiredDate=advanceRequestAddDTO.DesiredDate,ProjectID=advanceRequestAddDTO.ProjectID,Description=advanceRequestAddDTO.Description,WorkerID=advanceRequestAddDTO.WorkerID,NextStageUser=advanceRequestAddDTO.NextStageUser,NextStatu=advanceRequestAddDTO.NextStatu,FirstStatus=1 };
+            var parametre = new { AdvanceRequestStatus = advanceRequestAddDTO.AdvanceRequestStatus,Amount=advanceRequestAddDTO.Amount,CreatedDate=DateTime.Now,DesiredDate=advanceRequestAddDTO.DesiredDate,ProjectID=advanceRequestAddDTO.ProjectID,Description=advanceRequestAddDTO.Description,WorkerID=advanceRequestAddDTO.WorkerID,NextStageUser=advanceRequestAddDTO.NextStageUser,NextStatu=advanceRequestAddDTO.NextStatu,FirstStatus=1 };
 
             return _crudHelper.ExecuteStoreProcedure<AdvanceRequestAddDTO>("SP_AdvanceRequestAdd", parametre, advanceRequestAddDTO);
         }
