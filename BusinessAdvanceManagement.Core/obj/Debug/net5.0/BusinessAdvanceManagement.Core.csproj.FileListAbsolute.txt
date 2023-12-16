@@ -9,3 +9,4 @@ C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\Busine
 C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.Core\obj\Debug\net5.0\BusinessAdvanceManagement.Core.dll
 C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.Core\obj\Debug\net5.0\ref\BusinessAdvanceManagement.Core.dll
 C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.Core\obj\Debug\net5.0\BusinessAdvanceManagement.Core.pdb
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.Core\obj\Debug\net5.0\BusinessAdvanceManagement.Core.csproj.AssemblyReference.cache
