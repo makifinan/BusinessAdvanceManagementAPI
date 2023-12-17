@@ -23,6 +23,7 @@ namespace BusinessAdvanceManagement.BusinessLogic.ServiceRegistration
             services.AddScoped<IProjectService, ProjectService>();
             services.AddScoped<IAdvanceRequestDetailService, AdvanceRequestDetailService>();
             services.AddScoped<IRequestDetailService, RequestDetailService>();
+            services.AddScoped<IAdvanceRuleService, AdvanceRuleService>();
 
 
             return services;

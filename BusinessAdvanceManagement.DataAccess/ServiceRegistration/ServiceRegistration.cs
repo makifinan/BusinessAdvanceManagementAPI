@@ -26,6 +26,7 @@ namespace BusinessAdvanceManagement.DataAccess.ServiceRegistration
             services.AddScoped<IProjectDAL,ProjectDAL>();
             services.AddScoped<IAdvanceRequestDetailDAL,AdvanceRequestDetailDAL>();
             services.AddScoped<IRequestDetailDAL,RequestDetailDAL>();
+            services.AddScoped<IAdvanceRuleDAL,AdvanceRuleDAL>();
             
             
 

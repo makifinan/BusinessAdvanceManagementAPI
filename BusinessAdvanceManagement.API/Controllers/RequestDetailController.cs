@@ -1,5 +1,6 @@
 ﻿using BusinessAdvanceManagement.API.Controllers.Common;
 using BusinessAdvanceManagement.BusinessLogic.Interface;
+using BusinessAdvanceManagement.Domain.DTOs.RequestDetail;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -40,6 +41,17 @@ namespace BusinessAdvanceManagement.API.Controllers
                 return Ok(result);
             }
             return Ok();
+        }
+
+        [HttpPost("~/api/addrequestdetail")]
+        public IActionResult Add(RequestDetailAddDTO requestDetailAddDTO)
+        {
+            var result = _requestDetailService.Add(requestDetailAddDTO);
+            if (result.Datas==null)
+            {
+                return BadRequest(result.Message);
+            }
+            return Ok(result);
         }
     }
 }

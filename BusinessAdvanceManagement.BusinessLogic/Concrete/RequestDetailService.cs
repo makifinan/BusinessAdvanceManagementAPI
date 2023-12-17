@@ -19,6 +19,11 @@ namespace BusinessAdvanceManagement.BusinessLogic.Concrete
             _requestDetailDAL = requestDetailDAL;
         }
 
+        public GeneralReturnType<RequestDetailAddDTO> Add(RequestDetailAddDTO requestDetailAddDTO)
+        {
+            return _requestDetailDAL.Add(requestDetailAddDTO);
+        }
+
         public GeneralReturnType<IEnumerable<ConfirmAdvanceListDTO>> GetAdvanceRequest(int statuID)
         {
             return _requestDetailDAL.GetAdvanceRequest(statuID);
