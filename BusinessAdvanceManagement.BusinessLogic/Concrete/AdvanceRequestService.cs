@@ -24,6 +24,11 @@ namespace BusinessAdvanceManagement.BusinessLogic.Concrete
             return _advanceRequestDAL.Add(advanceRequestAddDTO);
         }
 
+        public GeneralReturnType<IEnumerable<OnlyAdvanceRequestListDTO>> GetByRequestID(int advanceRequestID)
+        {
+            return _advanceRequestDAL.GetByRequestID(advanceRequestID);
+        }
+
         public GeneralReturnType<IEnumerable<AdvanceRequestListDTO>> GetByWorker(int workerID)
         {
            return _advanceRequestDAL.GetByWorker(workerID);

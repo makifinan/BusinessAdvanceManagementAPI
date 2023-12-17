@@ -47,5 +47,21 @@ namespace BusinessAdvanceManagement.API.Controllers
             }
             
         }
+
+        [HttpGet("~/api/getbyrequestid/{advanceRequestID}")]
+        public IActionResult GetByRequestID(int advanceRequestID)
+        {
+            var result = _advanceRequestService.GetByRequestID(advanceRequestID);
+            //result null kontrolü yap
+            if (result.Datas.Any())
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return Ok();
+            }
+
+        }
     }
 }
