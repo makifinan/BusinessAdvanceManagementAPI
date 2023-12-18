@@ -24,8 +24,37 @@ namespace BusinessAdvanceManagement.DataAccess.Concrete
             var query = "insert into AdvanceRequestDetail (AdvenceRequestID,Status,CreatedDate,TransactionOwner,ConfirmedAmount,NextStageUser,NextStatu) values (@advanceRequestID,@statuID,@createdDate,@transactionOwner,@confirmedAmount,@nextStageUser,@nextStatu)";
 
             var parametre = new { advanceRequestID =requestDetailAddDTO.AdvanceRequestID,statuID=requestDetailAddDTO.StatuID, createdDate=DateTime.Now,transactionOwner=requestDetailAddDTO.TransactionOwner, confirmedAmount =requestDetailAddDTO.ConfirmAmount,nextStageUser=requestDetailAddDTO.NextStageUser,nextStatu=requestDetailAddDTO.NextStatu};
+            
+            var firstProcess=_crudHelper.ExecuteNonQuery<RequestDetailAddDTO>(query, parametre, requestDetailAddDTO);
 
-           return _crudHelper.ExecuteNonQuery<RequestDetailAddDTO>(query,parametre,requestDetailAddDTO);
+            if (requestDetailAddDTO.ApprovingDisapproving>0 && requestDetailAddDTO.ApprovingDisapprovingRole>0)
+            {
+                var successquery = "update AdvanceRequest set AdvanceRequestStatus=@statu,ApprovingDisapproving=@approvingDisapproving,ApprovalRejectionDate=@approvalRejectionDate,ConfirmedAmount=@confirmAmount,ApprovingDisapprovingRole=@approvingDisapprovinRole where AdvanceRequestID=@advanceRequestID";
+
+                var successParametre = new { statu = requestDetailAddDTO.RequestStatuID, approvingDisapproving = requestDetailAddDTO.ApprovingDisapproving, approvalRejectionDate = DateTime.Now, confirmAmount = requestDetailAddDTO.ConfirmAmount, approvingDisapprovinRole = requestDetailAddDTO.ApprovingDisapprovingRole, advanceRequestID = requestDetailAddDTO.AdvanceRequestID };
+
+                var result = _crudHelper.ExecuteNonQuery<RequestDetailAddDTO>(successquery, successParametre, requestDetailAddDTO);
+            }
+            else
+            {
+                var query2 = "update AdvanceRequest set AdvanceRequestStatus=@statu,ConfirmedAmount=@confirmAmount where AdvanceRequestID=@advanceRequestID ";
+
+                var parametre2 = new { statu = requestDetailAddDTO.RequestStatuID, confirmAmount = requestDetailAddDTO.ConfirmAmount, advanceRequestID = requestDetailAddDTO.AdvanceRequestID };
+
+                var result = _crudHelper.ExecuteNonQuery<RequestDetailAddDTO>(query2, parametre2, requestDetailAddDTO);
+            }
+
+
+            return firstProcess;
+        }
+
+        public GeneralReturnType<RequestDetailAddDTO> Red(RequestDetailAddDTO requestDetailAddDTO)
+        {
+            var query = "update AdvanceRequest set AdvanceRequestStatus=@status,ApprovingDisapproving=@approvingDisapproving,ApprovalRejectionDate=@approvalRejectionDate,ApprovingDisapprovingRole=@approvingDisapprovingRole where AdvanceRequestID=@advanceRequestID";
+
+            var parametre = new { status=requestDetailAddDTO.StatuID,approvingDisapproving=requestDetailAddDTO.ApprovingDisapproving, approvalRejectionDate=DateTime.Now,approvingDisapprovingRole=requestDetailAddDTO.ApprovingDisapprovingRole,advanceRequestID=requestDetailAddDTO.AdvanceRequestID};
+
+            return _crudHelper.ExecuteNonQuery<RequestDetailAddDTO>(query,parametre,requestDetailAddDTO);
         }
 
         public GeneralReturnType<IEnumerable<ConfirmAdvanceListDTO>> GetAdvanceRequest(int statuID)

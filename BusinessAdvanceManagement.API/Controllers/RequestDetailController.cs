@@ -53,5 +53,16 @@ namespace BusinessAdvanceManagement.API.Controllers
             }
             return Ok(result);
         }
+
+        [HttpPost("~/api/redrequestdetail")]
+        public IActionResult Red(RequestDetailAddDTO requestDetailAddDTO)
+        {
+            var result = _requestDetailService.Red(requestDetailAddDTO);
+            if (result.Datas == null)
+            {
+                return BadRequest(result.Message);
+            }
+            return Ok(result);
+        }
     }
 }

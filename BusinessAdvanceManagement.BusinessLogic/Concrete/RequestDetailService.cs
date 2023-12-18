@@ -38,5 +38,10 @@ namespace BusinessAdvanceManagement.BusinessLogic.Concrete
         {
             return _requestDetailDAL.GetAdvanceRequestDetail(advanceRequestID);
         }
+
+        public GeneralReturnType<RequestDetailAddDTO> Red(RequestDetailAddDTO requestDetailAddDTO)
+        {
+            return _requestDetailDAL.Red(requestDetailAddDTO);
+        }
     }
 }
