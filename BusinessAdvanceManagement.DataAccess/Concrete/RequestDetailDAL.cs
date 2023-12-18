@@ -35,6 +35,15 @@ namespace BusinessAdvanceManagement.DataAccess.Concrete
 
                 var result = _crudHelper.ExecuteNonQuery<RequestDetailAddDTO>(successquery, successParametre, requestDetailAddDTO);
             }
+            else if (requestDetailAddDTO.DeterminedPaymentDate != DateTime.MinValue)
+            {
+                //fm insert yapiyor
+                var successquery = "update AdvanceRequest set AdvanceRequestStatus=@statu,DeterminedPaymentDate=@determinedPaymentDate where AdvanceRequestID=@advanceRequestID";
+
+                var successParametre = new { statu = requestDetailAddDTO.RequestStatuID,determinedPaymentDate=requestDetailAddDTO.DeterminedPaymentDate, advanceRequestID = requestDetailAddDTO.AdvanceRequestID };
+
+                var result = _crudHelper.ExecuteNonQuery<RequestDetailAddDTO>(successquery, successParametre, requestDetailAddDTO);
+            }
             else
             {
                 var query2 = "update AdvanceRequest set AdvanceRequestStatus=@statu,ConfirmedAmount=@confirmAmount where AdvanceRequestID=@advanceRequestID ";

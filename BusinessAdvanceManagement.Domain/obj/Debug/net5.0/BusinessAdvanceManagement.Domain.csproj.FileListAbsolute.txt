@@ -9,3 +9,4 @@ C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\Busine
 C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.Domain\obj\Debug\net5.0\BusinessAdvanceManagement.Domain.dll
 C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.Domain\obj\Debug\net5.0\ref\BusinessAdvanceManagement.Domain.dll
 C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.Domain\obj\Debug\net5.0\BusinessAdvanceManagement.Domain.pdb
+C:\Users\Akif\Desktop\BusinessAdvanceManagement\BusinessAdvanceManagement\BusinessAdvanceManagement.Domain\obj\Debug\net5.0\BusinessAdvanceManagement.Domain.csproj.AssemblyReference.cache

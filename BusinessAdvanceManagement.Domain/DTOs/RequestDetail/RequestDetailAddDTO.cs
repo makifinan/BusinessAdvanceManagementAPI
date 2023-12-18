@@ -18,7 +18,7 @@ namespace BusinessAdvanceManagement.Domain.DTOs.RequestDetail
         public int ConfirmAmount { get; set; }
 
         //son kullanıcılarda AR tablosuna update atmak için
-        public DateTime PaymentMadeDate { get; set; }
+        public DateTime DeterminedPaymentDate { get; set; }
         public string AdvanceReceiptNumber { get; set; }
         public int ApprovingDisapproving { get; set; }
         public int ApprovingDisapprovingRole { get; set; }

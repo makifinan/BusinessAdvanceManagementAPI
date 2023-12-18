@@ -11,7 +11,11 @@ namespace BusinessAdvanceManagement.Domain.DTOs.AdvanceRequest
         public int AdvanceRequestID { get; set; }
         public int AdvanceRequestStatus { get; set; }
         public string StatuName { get; set; }
+
         public int ApprovingDisapproving { get; set; }
+        public string WorkerName { get; set; }
+        public string WorkerSurname { get; set; }
+
         public DateTime ApprovalRejectionDate { get; set; }
         public decimal ConfirmedAmount { get; set; }
         public DateTime DeterminedPaymentDate { get; set; }
@@ -21,6 +25,8 @@ namespace BusinessAdvanceManagement.Domain.DTOs.AdvanceRequest
         public string StatusName { get; set; }
 
         public int ApprovingDisapprovingRole { get; set; }
+        public string RoleName { get; set; }
+
         public int WorkerID { get; set; }
         public DateTime CreatedDate { get; set; }
         public decimal Amount { get; set; }
