@@ -13,5 +13,6 @@ namespace BusinessAdvanceManagement.DataAccess.Interface
         GeneralReturnType<AdvanceRequestAddDTO> Add(AdvanceRequestAddDTO advanceRequestAddDTO);
         GeneralReturnType<IEnumerable<AdvanceRequestListDTO>> GetByWorker(int workerID);
         GeneralReturnType<IEnumerable<OnlyAdvanceRequestListDTO>> GetByRequestID(int advanceRequestID);
+        public GeneralReturnType<IEnumerable<AdvanceRequestListsDTO>> GetByApproving(int statuID);
     }
 }

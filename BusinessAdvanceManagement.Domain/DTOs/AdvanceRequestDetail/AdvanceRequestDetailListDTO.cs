@@ -8,6 +8,7 @@ namespace BusinessAdvanceManagement.Domain.DTOs.AdvanceRequestDetail
 {
     public record AdvanceRequestDetailListDTO
     {
+        public int RowNum { get; set; }
         public int AdvanceRequestDetailID { get; init; }
         public string FirstStatuName { get; init; }
         public DateTime CreatedDate { get; init; }

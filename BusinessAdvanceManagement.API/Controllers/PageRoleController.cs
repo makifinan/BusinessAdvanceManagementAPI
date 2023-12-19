@@ -24,6 +24,10 @@ namespace BusinessAdvanceManagement.API.Controllers
         public IActionResult GetByRolID(int id)
         {
             var result = _pageRoleService.GetByRoleID(id);
+            if (result==null)
+            {
+                return NotFound();
+            }
             if (result.Datas.Any())
             {
                 return Ok(result);

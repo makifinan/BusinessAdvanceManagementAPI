@@ -25,6 +25,10 @@ namespace BusinessAdvanceManagement.API.Controllers
         public IActionResult GetAdvanceRequest(int statuID)
         {
             var result = _requestDetailService.GetAdvanceRequestAll(statuID);
+            if (result.Datas==null)
+            {
+                return NotFound();
+            }
             if (result.Datas.Any())
             {
                 return Ok(result);
@@ -36,6 +40,10 @@ namespace BusinessAdvanceManagement.API.Controllers
         public IActionResult GetAdvanceRequestDetail(int advanceRequestID)
         {
             var result = _requestDetailService.GetAdvanceRequestDetail(advanceRequestID);
+            if (result==null)
+            {
+                return NotFound();
+            }
             if (result.Datas.Any())
             {
                 return Ok(result);

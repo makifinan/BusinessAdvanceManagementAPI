@@ -44,7 +44,15 @@ namespace BusinessAdvanceManagement.DataAccess.Concrete
 
             return _crudHelper.ExecuteQuery<AdvanceRequestListDTO>(query,parametre);
         }
+        public GeneralReturnType<IEnumerable<AdvanceRequestListsDTO>> GetByApproving(int statuID)
+        {
+            var query = "select AR.AdvanceRequestID,WO.WorkerName,WO.WorkerSurname,RO.RoleName,U.UnitName,AR.Amount,AR.CreatedDate,AR.DesiredDate,P.ProjectName,S.StatuName,W.WorkerName as AppWorkerName,W.WorkerSurname as AppWorkerSurname ,R.RoleName AS AppRoleName,AR.ConfirmedAmount,AR.DeterminedPaymentDate,AR.PaymentMadeDate,RS.StatusName from AdvanceRequest AR join Worker WO ON AR.WorkerID = WO.WorkerID join Role RO on WO.WorkerRolID = RO.RoleID JOIN Unit U ON WO.WorkerBirimID = U.UnitID left join Statu S on AR.AdvanceRequestStatus = S.StatuID left join Worker W on AR.ApprovingDisapproving = W.WorkerID left join Role R on AR.ApprovingDisapprovingRole = R.RoleID left join RefundStatus RS on AR.RefundStatus = RS.RefoundStatusID left join Project P on AR.ProjectID = P.ProjectID where Ar.AdvanceRequestStatus = @statusID";
 
-        
+            var parametre = new { statusID = statuID };
+
+            return _crudHelper.ExecuteQuery<AdvanceRequestListsDTO>(query, parametre);
+        }
+
+
     }
 }

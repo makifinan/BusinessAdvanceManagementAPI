@@ -24,6 +24,10 @@ namespace BusinessAdvanceManagement.API.Controllers
         public IActionResult GetByRequest(int advanceRequestID)
         {
             var result = _advanceRequestDetailService.GetByRequest(advanceRequestID);
+            if (result==null)
+            {
+                return NotFound();
+            }
             if (result.Datas.Any())
             {
                 return Ok(result);

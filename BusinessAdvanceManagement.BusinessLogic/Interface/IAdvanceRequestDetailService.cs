@@ -11,5 +11,6 @@ namespace BusinessAdvanceManagement.BusinessLogic.Interface
     public interface IAdvanceRequestDetailService
     {
         GeneralReturnType<IEnumerable<AdvanceRequestDetailListDTO>> GetByRequest(int advanceRequestID);
+
     }
 }

@@ -24,6 +24,11 @@ namespace BusinessAdvanceManagement.BusinessLogic.Concrete
             return _advanceRequestDAL.Add(advanceRequestAddDTO);
         }
 
+        public GeneralReturnType<IEnumerable<AdvanceRequestListsDTO>> GetByApproving(int statuID)
+        {
+            return _advanceRequestDAL.GetByApproving(statuID);
+        }
+
         public GeneralReturnType<IEnumerable<OnlyAdvanceRequestListDTO>> GetByRequestID(int advanceRequestID)
         {
             return _advanceRequestDAL.GetByRequestID(advanceRequestID);

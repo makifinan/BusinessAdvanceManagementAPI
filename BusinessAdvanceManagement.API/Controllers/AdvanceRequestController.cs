@@ -37,6 +37,10 @@ namespace BusinessAdvanceManagement.API.Controllers
         {
             var result = _advanceRequestService.GetByWorker(workerID);
             //result null kontrolü yap
+            if (result.Datas==null)
+            {
+                return NotFound();
+            }
             if (result.Datas.Any())
             {
                 return Ok(result);
@@ -53,6 +57,29 @@ namespace BusinessAdvanceManagement.API.Controllers
         {
             var result = _advanceRequestService.GetByRequestID(advanceRequestID);
             //result null kontrolü yap
+            if (result.Datas==null)
+            {
+                return NotFound();
+            }
+            if (result.Datas.Any())
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return Ok();
+            }
+
+        }
+        [HttpGet("~/api/getbyapproving/{statuID}")]
+        public IActionResult GetByApproving(int statuID)
+        {
+            var result = _advanceRequestService.GetByApproving(statuID);
+            //result null kontrolü yap
+            if (result.Datas == null)
+            {
+                return NotFound();
+            }
             if (result.Datas.Any())
             {
                 return Ok(result);
