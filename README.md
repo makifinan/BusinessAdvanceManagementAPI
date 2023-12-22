@@ -1,6 +1,6 @@
-# Web API Projesi
+# İş Avans Yönetim Sistemi Web API Projesi
 
-Bu repo, [proje adı] için geliştirilen Web API projesini içermektedir. Aşağıda proje ile ilgili detayları bulabilirsiniz.
+Bu repo, BusinessAdvanceManagement projesi için geliştirilen Web API projesini içermektedir. Aşağıda proje ile ilgili detayları bulabilirsiniz.
 
 ## Kullanılan Teknolojiler
 
